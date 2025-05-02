@@ -53,7 +53,7 @@ function App() {
             <div className="grid gap-2 grid-cols-3 font-semibold text-2xl">
                 <div className="col-span-3 bg-slate-800 text-slate-50">
                     {output !== "" ? (
-                        output
+                        <p data-testid="output">{output}</p>
                     ) : (
                         <div className="flex gap-2">
                             <p>{calcA}</p>
@@ -112,6 +112,7 @@ function App() {
                     .map((x, i) => {
                         return (
                             <button
+                                key={i}
                                 onClick={() => numClick(i)}
                                 className="p-4 bg-slate-800 border border-slate-700 rounded-md text-slate-50"
                             >
