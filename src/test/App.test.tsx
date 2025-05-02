@@ -1,5 +1,5 @@
-import { describe, it, expect, afterAll } from "vitest"
-import { render, screen, fireEvent, waitFor, cleanup } from "@testing-library/react"
+import { describe, it, expect } from "vitest"
+import { render, screen, fireEvent, waitFor } from "@testing-library/react"
 
 import App from "../App"
 
